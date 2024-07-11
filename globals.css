@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: beige;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(16, 171, 171);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(221, 224, 54);
+  font-size: 1.2rem;
+}
+
+main hr {
+  border: 10;
+  background: rgb(240, 242, 232);
+  height: 1.2px;
+  overflow: hidden;
+  margin: 40px 84px;
+}
+
+.left {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+  align-items: center;
+}
+
+.firstSection>div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2rem;
+}
+
+.leftSection .button {
+  padding: 20px;
+}
+
+.leftSection .btn {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: white;
+  background: #2baaaf;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin: 10px;
+
+}
+
+.rightSection img {
+  width: 80%;
+}
+
+.purple {
+  color: darkgoldenrod;
+}
+
+.text-gray {
+  color: gray;
+}
+
+#element {
+  color: darkgoldenrod;
+}
+
+.line {
+  background-color: white;
+  height: 2px;
+  width: 75%;
+  margin-top: 0rem;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50px);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+
+.secondSection .box {
+  background: black;
+  width: 80vw;
+  height: 300px;
+  margin: 50px 0;
+  display: flex;
+}
+
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background: white;
+  margin: 0 6vw;
+}
+
+.img-top {
+  width: 30px;
+  position: relative;
+  top: -39px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 95px;
+  width: 150px;
+  font-size: 20px;
+  margin: 8px -9px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 10px;
+  margin: 12px -9px;
+}
+
+footer {
+  background-color: rgb(12, 155, 155);
+  height: 200px;
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer>div {
+  width: 223px;
+}
+
+footer .footer-rights {
+  text-align: center;
+  color: rgb(58, 57, 57);
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .leftSection .btn{
+    cursor: pointer;
+    margin: 10px;
+  }
+  .box {
+      flex-direction: column;
+  }
+  .line{
+      flex-direction: column;
+  }
+  .secondSection .vertical {
+      height: unset;
+  }
+  .vertical-title,.vertical-desc {
+      left: 45px;
+  }
+
+  .secondSection .box {
+      width: 50vw;
+  }
+  .secondSection .line{
+      width: 75%;
+  }
+  nav {
+      flex-direction: column;
+  }
+
+  .firstSection {
+      flex-direction: column-reverse;
+  }
+
+  .leftSection {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .secondSection{
+      max-width: 80vw;
+      margin: auto;
+      height: 241vh ;
+  }
+  .rightSection {
+      width: 721px !important;
+      display: flex;
+      justify-content: center;
+  }
+
+  .rightSection img {
+      width: 45vw;
+      margin-bottom: 73px;
+  }
+  .img-top{
+      top: 12px;
+  }
+  .secondSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  body {
+      max-width: fit-content;
+  }
+}
