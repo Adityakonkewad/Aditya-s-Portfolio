@@ -24,8 +24,10 @@ export default function Home() {
                 <div>I'am a Passionate</div>
                 <span id="element"></span>
                 <div className="button">
-                    <button className="btn">Download Resume</button>
-                    <button className="btn">Visit Github</button>
+                    {/* <button className="btn">Download Resume</button>
+                    <button className="btn">Visit Github</button> */}
+                    <a href="public/Resume.pdf" download class="btn">Download Resume</a>
+                    <a href="https://github.com/Adityakonkewad" download class="btn">Visit Github</a>
                 </div>
             </div>
             <div className="rightSection">
